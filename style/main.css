@@ -1,0 +1,115 @@
+body{
+            background-color: #e3152d;
+        }
+.top{
+height: 100vh;
+width: 100%;
+background-image: url(../images/red-ring-bg.jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
+.gradient{
+width: 100%;
+height: 100%;
+background-image: linear-gradient(to top, rgba(11,11,11,0), rgba(11,11,11, .6) 80%);
+}
+h1.top-heading{
+width: 100%;
+padding-top: 30px;
+color: #fff;
+font-weight: bold;
+font-size: 4em;
+margin: 0;
+}
+h1.middle-heading{
+border: solid #fff;
+background-color: #3d0003;
+color: #fff;
+padding: 10px;
+text-transform: uppercase;    
+font-size: 3em;    
+}
+h1.middle-heading{
+margin-top: 30px;
+margin-bottom: 30px;
+}
+h1.middle-heading small{
+color: #fff;
+}
+h1.middle-heading span{
+font-weight: bolder;
+text-transform: uppercase;
+}
+.info{
+margin-top: 30px;
+background-color: #06b2fa;
+border: solid #fff;
+margin-bottom: 30px;
+padding: 10px;
+}
+.info h1{
+color: #fff;
+text-transform: uppercase;
+font-size: 1em;
+margin: 0;
+letter-spacing: .1em;
+}
+.info p{
+margin: 0;
+font-weight: bolder;
+font-size: 2em;
+color: #fff;
+}
+.arrow-img{
+width: 300px;
+position: absolute;
+bottom: -55px;
+left: 50%;
+transform: translateX(-50%) rotate(10deg);
+pointer-events: none;
+}
+.lists{
+border: solid #fff;
+background-color: #3d0003;
+padding: 10px;
+}
+.lists h1{
+color: #06b2fa;
+font-weight: bolder;
+}
+.lists li{
+color: #fff;
+padding-bottom: 25px;
+}
+.bg-color::before{
+background-color: #ff6d1d;
+padding: 10px;
+border-radius: 100%;
+}
+ol {
+counter-reset: myOrderedListItemsCounter;
+margin-top: 30px; 
+}
+ol li {
+list-style-type: none;
+position: relative;
+}
+ol li:before {
+counter-increment: myOrderedListItemsCounter;
+content: counter(myOrderedListItemsCounter)" ";
+margin-right: 0.5em;
+}
+footer{
+margin-top: 30px;
+margin-bottom: 30px;
+}
+
+@media screen and (max-width: 750px) {
+  h1.top-heading{
+font-size: 2em;
+}
+h1.middle-heading{
+font-size: 2em;    
+}    
+}
